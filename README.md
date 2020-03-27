@@ -11,14 +11,15 @@ _An MVC web application allowing Pierre to log his savory and sweet treats with 
 
 | Specification | Example Input | Example Output |
 | ------------- |:-------------:| -------------------:|
-<!-- | Librarian user can create, read, update, delete, and list books in a catalog inventory.| New book including title, and author is entered | Book and details available to view and edit in library |
-| Librarian user can search for a book by author or title | Librarian inputs title | Book is displayed with author details  |
-| Librarian user can enter multiple authors for a book | Librarian edits book to add additional authors | Multiple authors displayed with book details |
-| Patron user can checkout a book from library database | Patron checks out 1 book  | Number of copies for that specific book decreases by 1|
-| Patron user can check how many copies of a particular book are available | Patron searches for book | Book details displays number of copies available|
-| Patron user can see a history of all books they've checked out | Patron logs into account | Patron can view entire checkout history |
-| Patron user can check when a book they've checked out is due | Patron clicks on checkout item | Due date is displayed |
-| Librarian user can see a list of all overdue books | Librarian views overdue library books| Overdue books are displayed |  -->
+| Application will display a home page in which the user may choose to view treats and flavors or create an account | Home | "View Treats", "Create Account"|
+| User can create, read, update, delete, and list Treats and Flavors in a catalog inventory.| New Treat, and flavor is entered | Treat and Flavor are now avaliable to view and edit |
+| When user clicks "Add Treat", they are directed to page to add new treat  | Click: "Add Treat" | "Add A New Treat" Name: "Input Name" |
+| When a user creates a treat, they are prompted to add a flavor | Click: "Add Flavor | "Add a new flavor" Name: "Input Name" |
+| User can assign many flavors to treats | "Treat Name" Click: "Add a new flavor" | Flavor Name: "Input Name", "Input Name | 
+| When user clicks "Add Flavor", they are directed to page to add new flavor  | Click: "Add Flavor" | "Add A New Flavor" Name: "Input Name" |
+| User can assign many treats to flavors | "Flavor Name" Click: "Add a new Treat" | Treat Name: "Input Name", "Input Name |
+| User can Create an Account and edit fields | "Create Account" | User is logged in|
+| If a user is not logged in, only a read view is avaliable|"Add a new Treat" | "You must create an account to perform this action" |
 
 
 ## Setup/Installation Requirements
