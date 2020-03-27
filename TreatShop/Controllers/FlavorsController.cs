@@ -5,7 +5,6 @@ using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
-//new using directives
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using System.Threading.Tasks;
@@ -13,20 +12,18 @@ using System.Security.Claims;
 
 namespace TreatShop.Controllers
 {
-  [Authorize] //new line
+  [Authorize] 
   public class FlavorsController : Controller
   {
     private readonly TreatShopContext _db;
-    private readonly UserManager<ApplicationUser> _userManager; //new line
+    private readonly UserManager<ApplicationUser> _userManager; 
 
-    //updated constructor
     public FlavorsController(UserManager<ApplicationUser> userManager, TreatShopContext db)
     {
       _userManager = userManager;
       _db = db;
     }
 
-    //updated Index method
     public async Task<ActionResult> Index()
     {
       var userId = this.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
@@ -41,7 +38,6 @@ namespace TreatShop.Controllers
       return View();
     }
 
-    //updated Create post method
     [HttpPost]
     public async Task<ActionResult> Create(Flavor flavor, int TreatId)
     {
