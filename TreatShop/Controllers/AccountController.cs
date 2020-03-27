@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Identity;
-using ToDoList.Models;
+using TreatShop.Models;
 using System.Threading.Tasks;
 using TreatShop.ViewModels;
 
@@ -12,7 +12,7 @@ namespace TreatShop.Controllers
     private readonly UserManager<ApplicationUser> _userManager;
     private readonly SignInManager<ApplicationUser> _signInManager;
 
-    public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, ToDoListContext db)
+    public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, TreatShopContext db)
     {
       _userManager = userManager;
       _signInManager = signInManager;

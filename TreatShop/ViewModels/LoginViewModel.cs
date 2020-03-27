@@ -1,4 +1,4 @@
-namespace Treatshop.ViewModels
+namespace TreatShop.ViewModels
 {
     public class LoginViewModel
     {

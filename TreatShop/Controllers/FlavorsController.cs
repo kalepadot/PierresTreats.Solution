@@ -78,7 +78,7 @@ namespace TreatShop.Controllers
     {
       if (TreatId != 0)
       {
-        _db.CategoryFlavor.Add(new FlavorTreat() { TreatId = TreatId, Flavord = flavor.FlavorId });
+        _db.FlavorTreat.Add(new FlavorTreat() { TreatId = TreatId, FlavorId = flavor.FlavorId });
       }
       _db.Entry(flavor).State = EntityState.Modified;
       _db.SaveChanges();
